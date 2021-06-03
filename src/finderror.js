@@ -2,12 +2,8 @@ import React, { Component } from 'react';
 
 
 const Problematic = () => {
-    throw(new Error('bugs'));
-    return(
-        <div>
-            
-        </div>
-    );
+    throw (new Error('bugs'));
+    return true;
 };
 
 class Finderror extends Component{
@@ -41,7 +37,7 @@ class Finderror extends Component{
     componentDidUpdate(prevProps, prevState, snapshot){
         console.log('componentDidUpdate');
     }
-
+//----------------------------------------------------------------------
     handleIncrease= () => {
         this.setState(
             ({ number }) => ({
