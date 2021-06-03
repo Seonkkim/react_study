@@ -8,10 +8,10 @@ class Counter extends Component {
     handleIncrease = () => {
         this.setState(
             (state) => ({
-                number: state.number
+                number: state.number + 1
             })
         );
-
+    }
     /*
     handleIncrease = () => {
         this.setState(
@@ -30,7 +30,7 @@ class Counter extends Component {
 
     state --> { number } 비구조화 할당
     */
-    }
+    
     handleDecrease = () => {
         this.setState({
             number : this.state.number - 1
